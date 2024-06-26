@@ -1,6 +1,6 @@
-## Bachelor Degree Project using Laravel
+Bachelor Degree Project using Laravel
 
-**Project Description**
+## Project Description
 
 Built a construction service marketplace system (web-based system):
 - where clients and service providers can interact on a single platform.
