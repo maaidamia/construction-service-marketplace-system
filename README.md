@@ -1,3 +1,211 @@
+## Bachelor Degree Project using Laravel
+
+**Project Description**
+
+Built a construction service marketplace system (web-based system):
+- where clients and service providers can interact on a single platform.
+- that can be managed and monitored by the administrator.
+- where product or service information is provided by multiple third parties and all transactions are managed by the website owner (organization).
+
+> This project, therefore, proposes developing a Construction Service Marketplace System for the construction sector businesses. 
+
+## Modules and its function for each user
+
+
+**1. Clients**
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Module</th>
+      <th scope="col">Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Register account and log in</td>
+      <td>Clients need to register and are required to provide their verification IC for identification. Then they can log in after successfully registering.</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>View service providers and their services</td>
+      <td>Clients can browse and search the services list the system provides and compare the best suitable service by viewing the details.</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Request service</td>
+      <td>Clients can request their preferred service by filling up a form, and the system will send it to the selected service provider and wait for the approval.</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Make payment</td>
+      <td>The clients can pay based on the quotation.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+**2. Service Providers**
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Module</th>
+      <th scope="col">Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Register account and log in</td>
+      <td>Service providers must register by filling out the required information and uploading SSM documents and a CIDB certificate. They must wait for approval from the organization to sell on the system.</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Add and manage services</td>
+      <td>Service providers can market their services to clients by uploading services to the system and adding services multiple times. They can manage the existing services by updating or deleting them.</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Manage orders</td>
+      <td>Service providers can manage their clients' orders and accept or reject clients' requests. Each order must have a work plan schedule by uploading it to the system for the clients to view and the organization to monitor the progress.</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>View payment progress</td>
+      <td>Service providers can view their payment's expected release date and status. They can also view the list of released payments from past orders.</td>
+    </tr>
+  </tbody>
+</table>
+
+  
+**3. Owner of The System (Organization)**
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Module</th>
+      <th scope="col">Function</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Manage clients</td>
+      <td>The organization must check and verify the clients' information and IC for identification and payment verification.</td>
+    </tr>
+    <tr>
+      <th scope="row">2</th>
+      <td>Manage service providers</td>
+      <td>The organization must check requirements and verify service providers' licenses before approving them.</td>
+    </tr>
+    <tr>
+      <th scope="row">3</th>
+      <td>Manage and monitor order completion</td>
+      <td>The organization can manage and monitor the service providers' order completion and quality control.</td>
+    </tr>
+    <tr>
+      <th scope="row">4</th>
+      <td>Manage payment progress</td>
+      <td>The organization can manage payment to the service providers' order, and it will release the amount based on the completion of the order.</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+## System's functional modules
+
+
+<table class="table">
+  <thead>
+    <tr>
+      <th scope="col">#</th>
+      <th scope="col">Module</th>
+      <th scope="col">Function</th>
+      <th scope="col">User</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th scope="row">1</th>
+      <td>Login</td>
+      <td>Login to the system</td>
+      <td>All users</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="2">2</th>
+      <td  rowspan="2">Service</td>
+      <td>View and browse a list of services</td>
+      <td>Users</td>
+    </tr>
+    <tr>
+      <td>Create, manage and advertise services</td>
+      <td>Service providers</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="3">3</th>
+      <td rowspan="3">Order</td>
+      <td>Order service</td>
+      <td>Clients</td>
+    </tr>
+    <tr>
+      <td>Manage clients' order </td>
+      <td>Service providers</td>
+    </tr>
+    <tr>
+      <td>Monitor order completion by the providers</td>
+      <td>The organization</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="3">4</th>
+      <td rowspan="3">Payment</td>
+      <td>Pay the ordered service</td>
+      <td>Clients</td>
+    </tr>
+    <tr>
+      <td>Receive payment by the organization</td>
+      <td>Service providers</td>
+    </tr>
+    <tr>
+      <td>Manage the payment between clients and service providers</td>
+      <td>The organization</td>
+    </tr>
+    <tr>
+      <th scope="row">5</th>
+      <td>Clients</td>
+      <td>Manage clients</td>
+      <td>The organization</td>
+    </tr>
+    <tr>
+      <th scope="row" rowspan="2">6</th>
+      <td  rowspan="2">Service providers</td>
+      <td>Add portfolio and receive clients' feedback</td>
+      <td>Service providers</td>
+    </tr>
+    <tr>
+      <td>Manage service providers</td>
+      <td>The organization</td>
+    </tr>
+  </tbody>
+</table>
+
+
+
+## Technical Requirements
+
+1. PHP
+2. Laravel
+3. MySQL
+5. BootStrap
+
+
 <p align="center"><a href="https://laravel.com" target="_blank"><img src="https://raw.githubusercontent.com/laravel/art/master/logo-lockup/5%20SVG/2%20CMYK/1%20Full%20Color/laravel-logolockup-cmyk-red.svg" width="400"></a></p>
 
 <p align="center">
